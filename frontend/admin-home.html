@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Home | HIMA TI e-Election</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar akan di-load otomatis -->
+
+    <!-- Hero Section Start -->
+    <section
+      class="hero-section min-vh-100 d-flex align-items-center"
+      id="home"
+    >
+      <div class="hero-content">
+        <h1 class="fw-bold mb-4">Selamat Datang, Admin</h1>
+        <p class="lead mb-4">
+          Kelola sistem pemilihan HIMA TI dengan mudah, aman, dan efisien.
+        </p>
+        <a href="views/admin/admin-dashboard.html" class="btn">
+          Masuk ke Dashboard
+        </a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Dashboard Features Start -->
+    <section id="about" class="bg-light">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Apa yang bisa dilakukan Admin?</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-plus-circle text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Menambahkan Kandidat</h5>
+              <p class="text-muted">
+                Admin dapat menambahkan pasangan calon ketua dan wakil ketua
+                dengan informasi lengkap.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-key text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Generate Password</h5>
+              <p class="text-muted">
+                Admin dapat membuat password otomatis untuk pemilih.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-whatsapp text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Mengirim Password via WhatsApp</h5>
+              <p class="text-muted">
+                Admin dapat mengirimkan password yang telah dibuat langsung ke
+                WhatsApp pemilih.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dashboard Features End -->
+
+    <!-- Panduan Admin Start -->
+    <section id="about">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Panduan penggunaan Admin</h2>
+        <div class="row">
+          <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-plus-circle text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Tambah Kandidat:</h5>
+              <p class="text-muted">
+                Klik menu "Tambah Kandidat" dan isi semua informasi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-key text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Generate Password:</h5>
+              <p class="text-muted">Admin dapat membuat password otomatis.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-whatsapp text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Kirim WhatsApp</h5>
+              <p class="text-muted">
+                Setelah dibuat, password dapat dikirim langsung via WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-4" data-aos="zoom-in" data-aos-delay="500">
+            <div class="card border-0 shadow-sm h-100 p-4">
+              <div class="mb-3">
+                <i class="bi bi-pencil-square text-primary fs-1"></i>
+              </div>
+              <h5 class="fw-semibold">Edit & Hapus Kandidat</h5>
+              <p class="text-muted">
+                Jika ada kesalahan data, admin dapat mengedit atau menghapusnya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Panduan Admin End -->
+
+    <!-- Footer akan di-load otomatis -->
+
+    <!-- Bootstrap Script -->
+    <script src="public/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script type="module" src="public/js/app.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

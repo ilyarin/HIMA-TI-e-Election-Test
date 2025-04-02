@@ -1,0 +1,63 @@
+/* ////////////////////////////////////////////////////////// */
+/* admin.html Start */
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding-top: 56px;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  transition: 0.5s ease-in-out;
+  color: #0d6efd !important;
+}
+
+/* Candidate Table */
+.candidate-table th,
+.candidate-table td {
+  vertical-align: middle;
+}
+
+.login-form .form-control {
+  border-color: 50px;
+  padding: 12px 20px;
+}
+
+.login-form .form-control:focus {
+  border-color: #0066ff;
+  box-shadow: 0 0 8px rgba(0, 102, 255, 0.5);
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Button */
+.btn-primary,
+.btn-danger {
+  margin: 10px;
+  width: 85px;
+  height: 38px;
+}
+
+/* Hasil */
+.card-body ul {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* admin.html End */
+/* ////////////////////////////////////////////////////////// */

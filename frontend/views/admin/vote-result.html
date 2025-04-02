@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Count | HIMA TI e-Election</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../public/css/vote.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="container text-center my-5">
+        <div class="header-container">
+          <h2 class="header-title mb-4">LIVE COUNT PEMILU HIMA TI</h2>
+          <div class="header-subtitle">Periode 2025-2026</div>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center mt-5">
+          <!-- Kandidat 1 -->
+          <div class="col-md-4">
+            <div class="kandidat-card">
+              <div class="nomor-urut-container">
+                <div class="nomor-urut">1</div>
+              </div>
+              <div class="kandidat-foto">
+                <img
+                  src="../../public/img/calon1.jpg"
+                  class="kandidat-img"
+                  alt="calon1"
+                />
+                <div
+                  class="foto-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalKandidat1"
+                >
+                  <i class="bi bi-search"></i>
+                  <span>Lihat Detail</span>
+                </div>
+              </div>
+              <div class="kandidat-info">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <div class="kandidat-label">Calon Ketua</div>
+                    <div class="kandidat-nama">BUDI SANTOSO</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="kandidat-label">Calon Wakil Ketua</div>
+                    <div class="kandidat-nama">ANDI WIJAYA</div>
+                  </div>
+                </div>
+                <p class="card-text mt-2">
+                  <strong>Suara:</strong> <span id="count-calon-1">0</span>
+                </p>
+                <div class="progress">
+                  <div
+                    id="progress-calon-1"
+                    class="progress-bar bg-success animated-progress"
+                    style="width: 0%"
+                  >
+                    <span id="percent-calon-1">0%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kandidat 2 -->
+          <div class="col-md-4">
+            <div class="kandidat-card">
+              <div class="nomor-urut-container">
+                <div class="nomor-urut">2</div>
+              </div>
+              <div class="kandidat-foto">
+                <img
+                  src="../../public/img/calon2.jpg"
+                  class="kandidat-img"
+                  alt="calon2"
+                />
+                <div
+                  class="foto-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalKandidat2"
+                >
+                  <i class="bi bi-search"></i>
+                  <span>Lihat Detail</span>
+                </div>
+              </div>
+              <div class="kandidat-info">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <div class="kandidat-label">Calon Ketua</div>
+                    <div class="kandidat-nama">ROBERT PAMUNGKAS</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="kandidat-label">Calon Wakil Ketua</div>
+                    <div class="kandidat-nama">RAKA PAMUNGKAS</div>
+                  </div>
+                </div>
+                <p class="card-text mt-2">
+                  <strong>Suara:</strong> <span id="count-calon-2">0</span>
+                </p>
+                <div class="progress">
+                  <div
+                    id="progress-calon-2"
+                    class="progress-bar bg-primary animated-progress"
+                    style="width: 0%"
+                  >
+                    <span id="percent-calon-2">0%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kandidat 3 -->
+          <div class="col-md-4">
+            <div class="kandidat-card">
+              <div class="nomor-urut-container">
+                <div class="nomor-urut">3</div>
+              </div>
+              <div class="kandidat-foto">
+                <img
+                  src="../../public/img/calon3.jpg"
+                  class="kandidat-img"
+                  alt="calon3"
+                />
+                <div
+                  class="foto-overlay"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalKandidat3"
+                >
+                  <i class="bi bi-search"></i>
+                  <span>Lihat Detail</span>
+                </div>
+              </div>
+              <div class="kandidat-info">
+                <div class="row align-items-center">
+                  <div class="col-6">
+                    <div class="kandidat-label">Calon Ketua</div>
+                    <div class="kandidat-nama">MUKHLIS AMIN</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="kandidat-label">Calon Wakil Ketua</div>
+                    <div class="kandidat-nama">ABU SAID</div>
+                  </div>
+                </div>
+                <p class="card-text mt-2">
+                  <strong>Suara:</strong> <span id="count-calon-3">0</span>
+                </p>
+                <div class="progress">
+                  <div
+                    id="progress-calon-3"
+                    class="progress-bar bg-danger animated-progress"
+                    style="width: 0%"
+                  >
+                    <span id="percent-calon-3">0%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grafik Ringkasan -->
+        <div class="chart-container mt-5">
+          <canvas id="chartHasil"></canvas>
+        </div>
+        <div class="footer-note mt-5">
+          <p>
+            <i class="bi bi-info-circle me-2"></i>Hasil akhir pemilihan ini
+            bersifat final dan tidak akan diperbarui lagi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Kandidat 1 -->
+    <div class="modal fade" id="modalKandidat1" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Kandidat Nomor Urut 1</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="modal-img-container">
+              <img
+                src="../../public/img/calon1.jpg"
+                class="img-fluid mb-4"
+                alt="calon1"
+              />
+            </div>
+            <div class="row candidate-details mb-4">
+              <div class="col-md-6">
+                <div class="candidate-card">
+                  <h6><i class="bi bi-person-fill me-2"></i>Calon Ketua</h6>
+                  <p class="candidate-name">Budi Santoso</p>
+                  <p>NIM: 236661094</p>
+                  <p>Prodi: Teknik Informatika</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="candidate-card">
+                  <h6>
+                    <i class="bi bi-person-fill me-2"></i>Calon Wakil Ketua
+                  </h6>
+                  <p class="candidate-name">Andi Wijaya</p>
+                  <p>NIM: 236661095</p>
+                  <p>Prodi: Teknologi Rekayasa Komputer</p>
+                </div>
+              </div>
+            </div>
+            <div class="vision-mission">
+              <div class="vision-box mb-4">
+                <h6><i class="bi bi-eye me-2"></i>Visi</h6>
+                <p>Mewujudkan Indonesia Adil dan Makmur</p>
+              </div>
+              <div class="mission-box">
+                <h6><i class="bi bi-list-check me-2"></i>Misi</h6>
+                <div class="mission-list">
+                  <p>
+                    <span class="mission-number">1.</span> Pendidikan Gratis dan
+                    Berkualitas - Menyediakan pendidikan gratis bagi semua
+                    tingkat, dengan fasilitas yang memadai dan tenaga pendidik
+                    berkualitas.
+                  </p>
+                  <p>
+                    <span class="mission-number">2.</span> Kesehatan Berkualitas
+                    dan Terjangkau - Memastikan layanan kesehatan mudah diakses,
+                    dengan fasilitas yang lebih baik serta tenaga medis yang
+                    kompeten.
+                  </p>
+                  <p>
+                    <span class="mission-number">3.</span> Ekonomi Kerakyatan
+                    yang Kuat - Mendukung UMKM, membuka lapangan kerja, dan
+                    memperkuat sektor pertanian serta industri kreatif.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center mt-4">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Kandidat 2 -->
+    <div class="modal fade" id="modalKandidat2" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Kandidat Nomor Urut 2</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="modal-img-container">
+              <img
+                src="../../public/img/calon2.jpg"
+                class="img-fluid mb-4"
+                alt="calon2"
+              />
+            </div>
+            <div class="row candidate-details mb-4">
+              <div class="col-md-6">
+                <div class="candidate-card">
+                  <h6><i class="bi bi-person-fill me-2"></i>Calon Ketua</h6>
+                  <p class="candidate-name">Robert Pamungkas</p>
+                  <p>NIM: 236661096</p>
+                  <p>Prodi: Teknik Komputer</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="candidate-card">
+                  <h6>
+                    <i class="bi bi-person-fill me-2"></i>Calon Wakil Ketua
+                  </h6>
+                  <p class="candidate-name">Raka Pamungkas</p>
+                  <p>NIM: 236661097</p>
+                  <p>Prodi: Teknik Informatika Multimedia</p>
+                </div>
+              </div>
+            </div>
+            <div class="vision-mission">
+              <div class="vision-box mb-4">
+                <h6><i class="bi bi-eye me-2"></i>Visi</h6>
+                <p>Mewujudkan Indonesia Emas</p>
+              </div>
+              <div class="mission-box">
+                <h6><i class="bi bi-list-check me-2"></i>Misi</h6>
+                <div class="mission-list">
+                  <p>
+                    <span class="mission-number">1.</span> Makan Siang Bergizi
+                    Gratis - Menyediakan makanan sehat dan bergizi gratis bagi
+                    pelajar serta pekerja untuk meningkatkan kesejahteraan dan
+                    produktivitas.
+                  </p>
+                  <p>
+                    <span class="mission-number">2.</span> Ketahanan Pangan -
+                    Mendorong produksi lokal, distribusi yang efisien, dan
+                    kebijakan yang memastikan ketersediaan pangan bagi semua.
+                  </p>
+                  <p>
+                    <span class="mission-number">3.</span> Digitalisasi Ekonomi
+                    - Mempercepat transformasi digital bagi UMKM dan sektor
+                    industri untuk meningkatkan daya saing dan efisiensi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center mt-4">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Kandidat 3 -->
+    <div class="modal fade" id="modalKandidat3" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content p-4">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Kandidat Nomor Urut 3</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="modal-img-container">
+              <img
+                src="../../public/img/calon3.jpg"
+                class="img-fluid mb-4"
+                alt="calon3"
+              />
+            </div>
+            <div class="row candidate-details mb-4">
+              <div class="col-md-6">
+                <div class="candidate-card">
+                  <h6><i class="bi bi-person-fill me-2"></i>Calon Ketua</h6>
+                  <p class="candidate-name">Mukhlis Amin</p>
+                  <p>NIM: 236661098</p>
+                  <p>Prodi: Teknik Informatika</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="candidate-card">
+                  <h6>
+                    <i class="bi bi-person-fill me-2"></i>Calon Wakil Ketua
+                  </h6>
+                  <p class="candidate-name">Abu Said</p>
+                  <p>NIM: 236661099</p>
+                  <p>Prodi: Teknik Informatika Multimedia</p>
+                </div>
+              </div>
+            </div>
+            <div class="vision-mission">
+              <div class="vision-box mb-4">
+                <h6><i class="bi bi-eye me-2"></i>Visi</h6>
+                <p>Mewujudkan Indonesia Berintegritas</p>
+              </div>
+              <div class="mission-box">
+                <h6><i class="bi bi-list-check me-2"></i>Misi</h6>
+                <div class="mission-list">
+                  <p>
+                    <span class="mission-number">1.</span> Reformasi Birokrasi -
+                    Mewujudkan pemerintahan yang transparan, efisien, dan bebas
+                    dari korupsi dengan sistem yang lebih modern dan akuntabel.
+                  </p>
+                  <p>
+                    <span class="mission-number">2.</span> Penegakan Hukum -
+                    Memastikan hukum ditegakkan secara adil tanpa tebang pilih
+                    untuk menciptakan keadilan dan ketertiban di masyarakat.
+                  </p>
+                  <p>
+                    <span class="mission-number">3.</span> Pemberdayaan Pemuda -
+                    Meningkatkan akses pendidikan, pelatihan, dan kesempatan
+                    kerja bagi pemuda agar lebih berdaya dan berkontribusi dalam
+                    pembangunan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center mt-4">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Script -->
+    <script src="../../public/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Vote Result JS -->
+    <script type="module" src="../../public/js/vote-result.js"></script>
+  </body>
+</html>

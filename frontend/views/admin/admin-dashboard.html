@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | HIMA TI e-Election</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../public/css/admin.css" />
+  </head>
+  <body>
+    <!-- Navbar akan di-load otomatis -->
+
+    <!-- Main Content Start -->
+    <main class="container my-5">
+      <h2 class="text-center mb-4 fw-bold">Calon yang Telah Didaftarkan</h2>
+      <div class="table-responsive shadow-sm rounded">
+        <table
+          class="table table-striped align-middle text-center candidate-table"
+        >
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Foto</th>
+              <th>Nama Calon Ketua</th>
+              <th>Nama Calon Wakil Ketua</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img
+                  src="../../public/img/calon1.jpg"
+                  alt="Calon 1"
+                  class="candidate-photo rounded"
+                  width="60"
+                />
+              </td>
+              <td>Budi Santoso</td>
+              <td>Andi Wijaya</td>
+              <td class="text-center align-middle">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button class="btn btn-sm btn-primary">
+                    <i class="bi bi-pencil-square me-1"></i>Edit
+                  </button>
+                  <button class="btn btn-sm btn-danger">
+                    <i class="bi bi-trash me-1"></i>Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img
+                  src="../../public/img/calon2.jpg"
+                  alt="Calon 2"
+                  class="candidate-photo rounded"
+                  width="60"
+                />
+              </td>
+              <td>Robert Pamungkas</td>
+              <td>Raka Pamungkas</td>
+              <td class="text-center align-middle">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button class="btn btn-sm btn-primary">
+                    <i class="bi bi-pencil-square me-1"></i>Edit
+                  </button>
+                  <button class="btn btn-sm btn-danger">
+                    <i class="bi bi-trash me-1"></i>Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <img
+                  src="../../public/img/calon3.jpg"
+                  alt="Calon 3"
+                  class="candidate-photo rounded"
+                  width="60"
+                />
+              </td>
+              <td>Mukhlis Amin</td>
+              <td>Abu Said</td>
+              <td class="text-center align-middle">
+                <div class="d-flex justify-content-center align-items-center">
+                  <button class="btn btn-sm btn-primary">
+                    <i class="bi bi-pencil-square me-1"></i>Edit
+                  </button>
+                  <button class="btn btn-sm btn-danger">
+                    <i class="bi bi-trash me-1"></i>Hapus
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Bootstrap Script -->
+    <script src="../../public/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script type="module" src="../../public/js/app.js"></script>
+  </body>
+</html>
