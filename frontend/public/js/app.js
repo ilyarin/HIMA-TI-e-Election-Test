@@ -10,12 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.pathname === "/"
   ) {
     // Load navbar
-    fetch("public/components/navbar.html")
+    fetch("frontend/public/components/navbar.html")
       .then((response) => response.text())
       .then((data) => document.body.insertAdjacentHTML("afterbegin", data));
 
     // Load footer
-    fetch("public/components/footer.html")
+    fetch("frontend/public/components/footer.html")
       .then((response) => response.text())
       .then((data) => document.body.insertAdjacentHTML("beforeend", data));
   } else if (
